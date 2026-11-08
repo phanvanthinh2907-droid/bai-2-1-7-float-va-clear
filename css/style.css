@@ -1,0 +1,42 @@
+/* Bài 2.1.7 - Thuộc tính float và clear */
+body {
+  max-width: 600px;
+  margin: 16px auto;
+  padding: 0 16px;
+  font-family: "Times New Roman", serif;
+  font-size: 18px;
+}
+
+/* Kiểu chung cho 3 khối */
+.left, .right, .center {
+  width: 150px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  padding: 10px;
+  background: CornflowerBlue;
+  border-radius: 5px;
+  text-shadow: 0px 0px 5px white;
+}
+
+/* Nổi sang trái, chữ bao quanh bên phải */
+.left {
+  float: left;
+  margin-right: 10px;
+}
+
+/* Nổi sang phải, chữ bao quanh bên trái */
+.right {
+  float: right;
+  margin-left: 10px;
+}
+
+/* Không nổi, căn giữa bằng margin auto */
+.center {
+  margin: 0 auto;
+}
+
+/* clear: both - đoạn này không bị các phần tử float phía trên chen vào */
+.clear {
+  clear: both;
+}
